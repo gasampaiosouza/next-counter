@@ -6,11 +6,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div>
       <Head>
-        <title>Your good title!</title>
+        <title>Next Counter</title>
 
         {/* font-family */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&display=swap"
           rel="stylesheet"
         />
         <link
