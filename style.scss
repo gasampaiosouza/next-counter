@@ -1,3 +1,6 @@
+// $black: #000;
+$main: #272343;
+
 * {
   margin: 0;
   padding: 0;
@@ -6,5 +9,57 @@
 }
 
 body {
-  font-family: 'Fira Sans', sans-serif;
+  // font-family: 'Fira Sans', sans-serif;
+  font-family: 'Fira Mono', monospace;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  font-size: 18px;
+
+  color: $main;
+}
+
+.counter {
+  user-select: none;
+  min-width: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+
+  .counter--decrease,
+  .counter--increase {
+    cursor: pointer;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: $main;
+    color: #fff;
+    border-radius: 5px;
+
+    box-shadow: 5px 5px 15px rgba($main, 0.25);
+    transition: background 0.15s ease-in-out;
+
+    svg {
+      width: 25px;
+    }
+
+    &:hover {
+      background: lighten($main, 5);
+    }
+  }
+
+  .counter--number {
+    font-size: 2em;
+    letter-spacing: 2px;
+  }
 }
